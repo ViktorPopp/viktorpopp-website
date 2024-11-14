@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<title>Viktor Popp</title>
+	<meta name="description" content="Information about me" />
+	<meta name="image"
+		content="https://raw.githubusercontent.com/viktorpopp/okienadev-website/main/src/images/preview.png" />
+
+	<!-- Open Graph-->
+	<meta property="og:type" content="website" />
+	<meta property="og:image"
+		content="https://raw.githubusercontent.com/viktorpopp/okienadev-website/main/src/images/preview.png" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="576" />
+	<meta property="og:url" content="https://viktorpopp.dev" />
+	<meta property="og:title" content="Viktor Popp" />
+	<meta property="og:description" content="Information about me" />
+	<!-- <meta property="og:image:alt" content="Image" /> -->
+
+	<!-- <meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://skillicons.dev https://cdn.jsdelivr.net; connect-src 'self'; font-src 'self' https://fonts.gstatic.com; frame-src 'none';"
+		/> -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+	<link rel="icon" type="image/x-icon" sizes="any" href="assets/favicon.ico" />
+	<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+	<link rel="manifest" href="/manifest.json" />
+	<meta name="theme-color" content="#262525" />
+
+	<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "viktorpopp",
+				"url": "https://viktorpopp.dev",
+				"birthDate": "2008",
+				"gender": "male",
+				"nationality": "Danish",
+				"sameAs": ["https://github.com/viktorpopp", "https://t.me/stadius_lucioni"],
+				"jobTitle": "Software Developer"
+			}
+		</script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+	<link rel="preconnect" href="https://skillicons.dev" />
+	<link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
+	<link rel="stylesheet" href="scss/style.scss" />
+
+	<!-- Google tag (gtag.js) -->
+	<%- gtagScript %>
+</head>
+
+<body>
+	<!-- Color theme switch slider -->
+	<button class="theme-toggle" id="theme-toggle" title="Toggle light and dark theme"
+		aria-label="Toggle light and dark theme" aria-live="polite" aria-pressed="false">
+		<svg class="sun-and-moon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+			<mask class="moon" id="moon-mask">
+				<rect x="0" y="0" width="100%" height="100%" fill="white"></rect>
+				<circle cx="24" cy="10" r="6" fill="black"></circle>
+			</mask>
+			<circle class="sun" cx="12" cy="12" r="6" mask="url(#moon-mask)" fill="currentColor"></circle>
+			<g class="sun-beams" stroke="currentColor">
+				<line x1="12" y1="1" x2="12" y2="3"></line>
+				<line x1="12" y1="21" x2="12" y2="23"></line>
+				<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+				<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+				<line x1="1" y1="12" x2="3" y2="12"></line>
+				<line x1="21" y1="12" x2="23" y2="12"></line>
+				<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+				<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+			</g>
+		</svg>
+	</button>
+
+	<!-- Background gradiant blob -->
+	<div class="background-gradient" aria-hidden="true"></div>
+
+	<!-- Main contents -->
+	<div class="content">
+		<!-- Profile card -->
+		<div class="profile-card" aria-labelledby="profile-card-title">
+			<div id="dots" aria-hidden="true"></div>
+
+			<div class="info">
+				<h1 class="name" id="profile-card-title">Viktor Popp</h1>
+				<div class="meta-info">
+					<span class="meta-item">
+						<i class="icon location" aria-hidden="true"></i>
+						<i class="emoji da-flag" aria-hidden="true"></i>
+						<span>Denmark</span>
+					</span>
+					<span class="meta-item">
+						<i class="icon github" aria-hidden="true"></i>
+						<a href="https://github.com/viktorpopp">
+							<span>viktorpopp</span>
+						</a>
+					</span>
+				</div>
+				<div class="description">
+					<p>
+						Hello <i class="emoji hello" aria-hidden="true"></i>, my name is <b>Viktor</b>. I am a 13.
+						y.o. developer. I mainly use in <b>C++</b>, <b>TypeScript</b> and <b>Python</b>
+					</p>
+					<p>I also have experience with <b>Game Dev</b> and i have used <b>Godot</b>, <b>Unity</b>,
+						<b>Construct 3</b> and <b>Unreal</b>
+					</p>
+					<p>
+						If I have time, I help developing a game called
+						<a href="https://github.com/GodotCommunityGamesOrg/Lost-Pilot"><b>Lost Pilot</b></a>.
+						I am also developing a german learning portal called
+						<a href="https://tysknoeglen.web.app/"><b>TyskNoeglen</b></a> (Danish only).
+					</p>
+				</div>
+			</div>
+
+			<div class="dynamic-blobs-container" aria-hidden="true">
+				<div class="blue blob"></div>
+				<div class="cyan blob"></div>
+				<div class="purple blob"></div>
+			</div>
+		</div>
+
+		<h1 class="center" id="projects"><i class="icon table"></i> My projects</h1>
+
+		<!-- Project card -->
+		<p>List of my best projects</p>
+		<div class="projects">
+			<!-- Tysk Noeglen -->
+			<div class="project-tab" data-link="https://github.com/viktorpopp/tysknoeglen" role="region"
+				aria-labelledby="tysknoeglen-title">
+				<div class="main-tab">
+					<div class="project-header">
+						<div class="repo">
+							<i class="icon repo" aria-hidden="true"></i>
+							<span class="name" id="tysknoeglen-title">tysknoeglen</span>
+						</div>
+
+						<i class="icon open" aria-hidden="true"></i>
+					</div>
+
+					<div class="description">
+						<p>🌠 My german learning portal that are in very early development. New replacement for CampTysk
+							(danish only)</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- TeleTown - Coding Pirates Game Jam 2024 -->
+			<div class="project-tab" data-link="https://github.com/ViktorPopp/CodingPiratesGameJam" role="region"
+				aria-labelledby="coding-pirates-game-jam-title">
+				<div class="main-tab">
+					<div class="project-header">
+						<div class="repo">
+							<i class="icon repo" aria-hidden="true"></i>
+							<span class="name" id="coding-pirates-game-jam-title">TeleTown</span>
+						</div>
+
+						<i class="icon open" aria-hidden="true"></i>
+					</div>
+					<div class="description">
+						<p>💡 A little game made during Coding Pirates Game Jam 2024 about giving new residents
+							internet. By David, Sejr and Viktor</p>
+					</div>
+
+					<div class="slider"></div>
+				</div>
+			</div>
+
+			<!-- This Website! -->
+			<div class="project-tab" data-link="https://github.com/viktorpopp/viktorpopp-website" role="region"
+				aria-labelledby="viktorpopp-website-title">
+				<div class="main-tab">
+					<div class="project-header">
+						<div class="repo">
+							<i class="icon repo" aria-hidden="true"></i>
+							<span class="name" id="viktorpopp-website-title">viktorpopp-website</span>
+						</div>
+
+						<i class="icon open" aria-hidden="true"></i>
+					</div>
+					<div class="description">
+						<p>🌐 This super cool website! Originally made by <a href="https://okinea.dev/">Okinea Dev</a>
+							and changed to be for me ;)</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- The Slime Invasion -->
+			<div class="project-tab"
+				data-link="https://play.unity.com/en/games/a9b1330e-a9ad-4e23-a329-5609f537bf4e/webgl-builds"
+				role="region" aria-labelledby="the-slime-invasion-title">
+				<div class="main-tab">
+					<div class="project-header">
+						<div class="repo">
+							<i class="icon repo" aria-hidden="true"></i>
+							<span class="name" id="the-slime-invasion-title">The Slime Invasion</span>
+						</div>
+
+						<i class="icon open" aria-hidden="true"></i>
+					</div>
+					<div class="description">
+						<p>🎮 A little vampire-survivors like game made at NerdCamp 2024. About being lost in a wrld
+							where slimes are everywhere!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h1 class="center skills-title" id="skills"><i class="icon bolt"></i> Skills</h1>
+
+		<!-- My Skills -->
+		<div class="skills">
+			<div class="section programming" aria-labelledby="programming-skills-title">
+				<h2 id="programming-skills-title"><i class="icon code" aria-hidden="true"></i> Programming</h2>
+
+				<div class="skills-list">
+					<a href="https://www.python.org/" target="_blank" aria-label="Python">
+						<img src="https://skillicons.dev/icons?i=py" alt="python logo" width="45" height="45" />
+					</a>
+					<a href="https://discord.js.org/" target="_blank" aria-label="Python">
+						<img src="https://skillicons.dev/icons?i=discordjs" alt="discordjs logo" width="45"
+							height="45" />
+					</a>
+					<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+						aria-label="JavaScript">
+						<img src="https://skillicons.dev/icons?i=js" alt="javascript logo" width="45" height="45" />
+					</a>
+					<a href="https://www.typescriptlang.org/" target="_blank" aria-label="TypeScript">
+						<img src="https://skillicons.dev/icons?i=ts" alt="typescript logo" width="45" height="45" />
+					</a>
+					<a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" aria-label="C">
+						<img src="https://skillicons.dev/icons?i=c" alt="c logo" width="45" height="45" />
+					</a>
+					<a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" aria-label="C++">
+						<img src="https://skillicons.dev/icons?i=cpp" alt="c++ logo" width="45" height="45" />
+					</a>
+					<a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank" aria-label="C#">
+						<img src="https://skillicons.dev/icons?i=cs" alt="c# logo" width="45" height="45" />
+					</a>
+					<a href="https://www.dart.dev/" target="_blank" aria-label="Dart">
+						<img src="https://skillicons.dev/icons?i=dart" alt="dart logo" width="45" height="45" />
+					</a>
+					<a href="https://flutter.dev/" target="_blank" aria-label="Flutter">
+						<img src="https://skillicons.dev/icons?i=flutter" alt="flutter logo" width="45" height="45" />
+					</a>
+					<a href="https://firebase.google.com/" target="_blank" aria-label="Firebase">
+						<img src="https://skillicons.dev/icons?i=firebase" alt="firebase logo" width="45" height="45" />
+					</a>
+					<a href="https://github.com/features/actions" target="_blank" aria-label="GitHub Actions">
+						<img src="https://skillicons.dev/icons?i=githubactions" alt="githubactions logo" width="45"
+							height="45" />
+					</a>
+					<a href="https://wikipedia.org/wiki/Bash" target="_blank" aria-label="Bash">
+						<img src="https://skillicons.dev/icons?i=bash" alt="bash logo" width="45" height="45" />
+					</a>
+					<a href="https://learn.microsoft.com/powershell/" target="_blank" aria-label="PowerShell">
+						<img src="https://skillicons.dev/icons?i=powershell" alt="PowerShell logo" width="45"
+							height="45" />
+					</a>
+					<a href="https://dotnet.microsoft.com/" target="_blank" aria-label=".NET">
+						<img src="https://skillicons.dev/icons?i=dotnet" alt=".net logo" width="45" height="45" />
+					</a>
+				</div>
+			</div>
+
+			<div class="section tools" aria-labelledby="tools-skills-title">
+				<h2 id="tools-skills-title"><i class="icon tools" aria-hidden="true"></i> Tools</h2>
+
+				<div class="skills-list">
+					<a href="https://code.visualstudio.com/" target="_blank" aria-label="Visual Studio Code">
+						<img src="https://skillicons.dev/icons?i=vscode" alt="vscode logo" width="45" height="45" />
+					</a>
+					<a href="https://deno.land/" target="_blank" aria-label="Visual Studio Code">
+						<img src="https://skillicons.dev/icons?i=	deno" alt="deno logo" width="45" height="45" />
+					</a>
+					<a href="https://developer.android.com/studio" target="_blank" aria-label="Visual Studio Code">
+						<img src="https://skillicons.dev/icons?i=androidstudio" alt="android studio logo" width="45"
+							height="45" />
+					</a>
+					<a href="https://visualstudio.microsoft.com/" target="_blank" aria-label="Visual Studio">
+						<img src="https://skillicons.dev/icons?i=visualstudio" alt="visualstudio logo" width="45"
+							height="45" />
+					</a>
+					<a href="https://github.com/" target="_blank" aria-label="GitHub">
+						<img src="https://skillicons.dev/icons?i=github" alt="github logo" width="45" height="45" />
+					</a>
+					<a href="https://godotengine.org/" target="_blank" aria-label="Godot Engine">
+						<img src="https://skillicons.dev/icons?i=godot" alt="godot logo" width="45" height="45" />
+					</a>
+					<a href="https://unity.com/" target="_blank" aria-label="Unity">
+						<img src="https://skillicons.dev/icons?i=unity" alt="unity logo" width="45" height="45" />
+					</a>
+					<a href="https://www.unrealengine.com/" target="_blank" aria-label="Unreal Engine">
+						<img src="https://skillicons.dev/icons?i=unrealengine" alt="unrealengine logo" width="45"
+							height="45" />
+					</a>
+					<a href="https://www.yoyogames.com/en/gamemaker" target="_blank" aria-label="GameMaker">
+						<img src="https://skillicons.dev/icons?i=gamemakerstudio" alt="gamemaker logo" width="45"
+							height="45" />
+					</a>
+				</div>
+			</div>
+
+			<div class="section hosting">
+				<h2>Other</h2>
+
+				<div class="skills-list">
+					<a href="https://git-scm.com/" target="_blank">
+						<img src="https://skillicons.dev/icons?i=git" alt="git logo" width="45" height="45" />
+					</a>
+					<a href="https://wikipedia.org/wiki/Linux" target="_blank">
+						<img src="https://skillicons.dev/icons?i=linux" alt="linux logo" width="45" height="45" />
+					</a>
+					<a href="https://ubuntu.com/" target="_blank">
+						<img src="https://skillicons.dev/icons?i=ubuntu" alt="ubuntu logo" width="45" height="45" />
+					</a>
+					<a href="https://discord.com/" target="_blank" aria-label="Discord">
+						<img src="https://skillicons.dev/icons?i=discord" alt="discord logo" width="45" height="45" />
+					</a>
+					<a href="https://www.microsoft.com/en-us/windows" target="_blank" aria-label="Windows">
+						<img src="https://skillicons.dev/icons?i=windows" alt="windows logo" width="45" height="45" />
+					</a>
+					<a href="https://www.markdownguide.org/" target="_blank" aria-label="Markdown">
+						<img src="https://skillicons.dev/icons?i=markdown" alt="markdown logo" width="45" height="45" />
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+</body>
+
+<script>
+	if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+		const contentElements = document.querySelectorAll(".content > *");
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry, index) => {
+					if (entry.isIntersecting) {
+						setTimeout(() => {
+							entry.target.classList.add("animate");
+							observer.unobserve(entry.target); // Stop observing once animated
+						}, index * 200); // Apply delay based on index
+					}
+				});
+			},
+			{ threshold: 0.1 }
+		); // Adjust threshold as needed
+
+		contentElements.forEach((element) => {
+			observer.observe(element);
+		});
+	}
+</script>
+
+<script src="js/main.js" type="module"></script>
+
+<svg style="display: none">
+	<filter id="noiseFilter">
+		<feTurbulence type="fractalNoise" baseFrequency="0.6" stitchTiles="stitch" />
+		<feColorMatrix in="colorNoise" type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0" />
+		<!-- <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/> -->
+		<!-- <feBlend in="SourceGraphic" in2="monoNoise" mode="screen" /> -->
+	</filter>
+</svg>
+
+</html>
